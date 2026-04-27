@@ -170,16 +170,15 @@ karkusha8
 
 ## Deployment
 
-The project is deployed and accessible at:
+The project is deployed on Render and is accessible at:
 
-http://your-domain.com
+https://photo-share-skp2.onrender.com
 
-API documentation is available at:
+Interactive API documentation (Swagger UI):
 
-http://your-domain.com/docs
+https://photo-share-skp2.onrender.com/docs
 
-The application is deployed using Docker with a PostgreSQL database.
-
+The application runs in a Docker container and uses PostgreSQL as the database.
 ## License
 
 MIT
