@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: photo_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: photo_db
+    ports:
+      - "5433:5432"
+
+  api:
+    build: .
+    container_name: photo_api
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
